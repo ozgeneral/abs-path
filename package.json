@@ -1,0 +1,12 @@
+{
+  "name": "require-abs-path",
+  "version": "1.0.0",
+  "description": "Use absolute paths for nodejs import/require statements",
+  "main": "index.js",
+  "repository": "https://github.com/ozgeneral/require-abs-path",
+  "author": "Ozgen Eren (ozgeneralium@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "find-package-json": "^1.2.0"
+  }
+}
