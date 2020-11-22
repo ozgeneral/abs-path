@@ -5,6 +5,7 @@ const MAX_ITERATIONS = 10;
 
 done = false;
 cnt = 0;
+base_dir = "/";
 while(!done) {
     next = f.next();
     if (next.done) { break; }
@@ -15,6 +16,6 @@ while(!done) {
         throw new Error(`Could not find the base_dir from ${__dirname} after ${MAX_ITERATIONS}`);
     }
 }
-module.exports = function(path) {
-    return path.join(base_dir, path);
+module.exports = function(module_path) {
+    return path.join(base_dir, module_path);
 }
