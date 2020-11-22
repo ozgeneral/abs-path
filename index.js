@@ -16,5 +16,5 @@ while(!done) {
     }
 }
 module.exports = function(path) {
-    return base_dir + path;
+    return path.join(base_dir, path);
 }
